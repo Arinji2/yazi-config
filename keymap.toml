@@ -4,6 +4,11 @@ run = "quit"
 desc = "Quit Yazi"
 
 [[manager.prepend_keymap]]
+on = ["<Enter>"]
+run = "enter"
+desc = "Enter directory or open file"
+
+[[manager.prepend_keymap]]
 on  = "<C-n>"
 run = 'shell -- dragon -x -i -T "$1"'
 
